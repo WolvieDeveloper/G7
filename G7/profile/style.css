@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.know {
+    margin-bottom: -50px;
+    position: relative;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.7rem;
+    max-width: 20ch;
+}
+
+.size {
+    width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 70%;
+}
+
+.container img {
+    height: 48vh;
+    width: 48vh;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.container p {
+    flex-basis: 50%;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.container .picture {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.connect {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.profile {
+    flex-basis: calc(33.33% - 20px);
+    text-align: center;
+}
+
+.profile p {
+    font-size: 18px;
+}
+
+.profile .picture {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.profile .picture:hover {
+    -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-center {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 0 20px 0px rgba(26, 0, 255, 255);
+    }
+}
